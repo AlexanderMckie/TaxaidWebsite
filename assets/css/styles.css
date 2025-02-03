@@ -1,0 +1,119 @@
+/*  Nav Bar and its compnments*/
+.navbar {
+    position: relative;
+    z-index: 10; /* Ensure navbar is above the pseudo-element */
+}
+
+.navbar:before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust these values to control the gradient size */
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1; /* Position the gradient behind the navbar content */
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+    pointer-events: none; /* Allows clicks to pass through to elements below */
+}
+
+a {
+    color: rgb(77, 24, 24);
+}
+a:visited {
+    color: rgb(21, 22, 94);
+}
+a:hover {
+    color: #6F86FF;
+}
+
+/* off-screen-menu */
+.off-screen-menu {
+background-color:  rgba(182, 191, 228, 0.349);
+
+width: 100%;
+max-width: 450px;
+position: fixed;
+top: 0;
+right: -450px;
+display: flex;
+flex-direction: column;
+align-items: center;    
+justify-content: center;
+text-align: center;
+font-size: 3rem;
+transition: .3s ease;
+backdrop-filter: blur(5px);
+border-bottom-left-radius: 20px;
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+z-index: 99;
+line-height: 1.5;
+font-size: 40px;
+font-family: "Overpass", sans-serif;
+font-optical-sizing: auto;
+font-weight: 800;
+padding-top:110px;
+}
+.off-screen-menu.active {
+right: 0;
+}
+/* nav */
+nav {
+    padding: 1rem;
+    display: flex;
+    background-color: rgb(34, 37, 49);
+}
+/* ham menu */
+.ham-menu {
+    height: 60px;
+    width: 50px;
+    display: flex;
+    margin-left: auto;
+    position: sticky; /* Changed from relative to sticky */
+    right: 5%;
+    top: 2%;
+    z-index: 100;
+    display: block; 
+}
+
+.ham-menu span.TopBar {
+    background-color: rgb(174,213,226); /* Top bar color */
+}
+.ham-menu span.MidBar {
+    background-color: rgb(250,190,190); /* Middle bar color */
+}
+.ham-menu span.BottomBar {
+    background-color: rgb(246,191,133); /* Bottom bar color */
+}
+.ham-menu span {
+    height: 8px;
+    width: 100%;
+    background-color: #6e5cbd;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+    box-shadow: none ;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
