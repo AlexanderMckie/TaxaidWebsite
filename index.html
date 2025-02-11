@@ -15,17 +15,127 @@
     </div>
     <nav class="off-screen-menu" id="off-screen-menu">
         <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="taxinfo.html">Tax Info</a></li>
+        </ul>
+    </nav>
+    <nav class="nav-bar-desktop" id="nav-bar-desktop">
+        <img class="nav-logo" src="assets/images/TaxaidLogoSmall.svg" alt="Tax-Aid Accounting Logo">
+        <ul class="nav-links">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="taxinfo.html">Tax Info</a></li>
         </ul>
     </nav>
 
-<header>
+<header >
+    <img class="mobile-header" src="assets/images/TaxaidLogoFull.svg" alt="TaxAid Logo">
+    <img class="header-image" src="assets/images/HeaderImage.jpg" alt="Sun Set image">
+    <h3 class="header-text-mobile" >We Provide a Full Range of Taxation and Accounting Services in the Perth Northen Suburbs</h3>
+    <h3 class="header-text" >We Provide a Full Range of Taxation and Accounting Services in the Perth Northen Suburbs</h3>
+    
 
 </header>
 <main>
+    <section class="header-contact">
+        <div class="header-contact-phone card">
+            <img src="assets/images/PhoneIcon.svg" alt="Phone Icon">
+            <div class="card-content" onclick="window.location.href='tel:0893428899'">
+                <p>08 9342 8899</p>
+            </div>
+        </div>
+        <div class="header-contact-email card">
+            <img src="assets/images/EmailIcon.svg" alt="Email Icon">
+            <div class="card-content" onclick="window.location.href='mailto:info@tax-aid.com'">
+                <p >info@tax-aid.com</p>
+            </div>
+        </div>  
+    </section>
+    <section class="services">
+        <h1>Our Services</h1>
+        <div class="service-card">
+            <h2>All Types of Tax Returns</h2>
+            <p>If you want to get ahead with your tax returns, get in touch with any of our branch offices right now! 
+                We specialise in Tax Returns for Individuals, Sole Traders, Partnership, Family Trust & Company, 
+                Shares & Investment, Rental Properties, as well as Multiple Years & Late Lodgements.
+            </p>
+        </div>
+        <div class="service-card-image">
+            <img src="assets/images/ServiceTwo.jpg" alt="accountant working on a computer">
+         </div>
+        <div class="service-card">
+                <h2>Accounting and Bookkeeping</h2>
+                <p>Our qualified accountants and bookkeepers can help manage your books, track your expenses and note your
+                receipts so that you’ll be ready for the end of the financial year.
+                </p>
+        </div>
+        <div class="service-card">
+            <h2>BAS, GST, IAS Returns</h2>
+            <p>Completing all tax-related documents such as the BAS, GST & IAS Returns are necessary by the end of the 
+                financial year.</p>
+        </div>
+        <div class="service-card">
+            <h2>Tax Planning</h2>
+            <p>Tax Planning is an essential part especially if you want to lessen your tax liability.</p>
+        </div>
+        <div class="service-card-image">
+            <img src="assets/images/ServiceThree.jpg" alt="accountant working on a computer">
+         </div>
+        <div class="service-card">
+            <h2>Accounting & Tax Business Structures <br> Set-up & Advice</h2>
+            <p>Get reliable information from credible business advisors and plan with tax and financial advisors so that 
+                you can manage your business efficiently.</p>
+        </div>
+        <h2 class="service-footer">Our team is dedicated to delivering high-quality accounting services to meet all your accounting needs.</h2>
+    </section>  
+    <section class="about">
+        <h1>About Us</h1>
+        <p class="about-text">Tax-Aid Accounting is a family-owned business that has been operating for over 20 years. We have two branches 
+            located in Nollamara and Greenwood. Our team of accountants and bookkeepers are dedicated to providing 
+            professional and reliable services to our clients. We are committed to helping you with all your tax and 
+            accounting needs. Our director Hasmukh Joshi has over 40 years of experience in the accounting industry. 
+        </p>
+    <section class="locations">
+        <h1>locations</h1>
+        <div class="locations-container">
+            <div class="locations-card" onclick="window.location.href='https://www.google.com/maps?q=334+Wanneroo+Road,+Nollamara+WA+6061'">
+            <img src="assets/images/Nollamara.png" alt="Nollamara location">
+                <p>334 Wanneroo Road <br>Nollamara WA 6061</p> 
+            </div>
+            <div class="locations-card" onclick="window.location.href='https://www.google.com/maps?q=15a+Canham+Way,+Greenwood+WA+6024'">
+            <img src="assets/images/Greenwood.png" alt="Greenwood location">
+                <p>15a Canham Way<br>Greenwood WA 6024</p>
+            </div>
+        </div>    
+    </section>
+    <section class="contact">
+<h1>Contact Us</h1>
+<form action="https://formsubmit.co/alex@sitara.net.au" method="post" enctype="text/plain">
+    <div class="form-container">
+        <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+        </div>
+        <div class="form-group">
+            <label for="mobile-number">Mobile Number:</label>
+            <input type="tel" id="mobile-number" name="mobile-number" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="query">Query:</label>
+            <textarea id="query" name="query" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
 
 </main>
 <footer>
