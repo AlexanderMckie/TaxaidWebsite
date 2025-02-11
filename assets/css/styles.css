@@ -277,6 +277,7 @@ nav {
     width: 90%;
     margin: 1rem;
     backdrop-filter: blur(40px);
+    max-width: 500px;
     
   
 }
@@ -303,6 +304,7 @@ nav {
     color: #211527;
     background: linear-gradient(to bottom, rgb(193,193,192), rgba(141,143,143, 1));
     padding: 4rem;
+    width: 100%;
 }
 /* about section */
 .about {
@@ -338,6 +340,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+background-color: rgb(141,143,143);
 
 }
 
@@ -350,6 +353,7 @@ margin-bottom: 2rem;
 .locations-container {
     display: flex;
     flex-wrap: wrap;
+    max-width: 90%;
   
 }
 .locations-card {
@@ -397,8 +401,12 @@ form {
     background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10%;
-    align-items: center;
+    align-items: center;;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
 }
 
 .form-group {
@@ -450,6 +458,19 @@ button[type="submit"]:hover {
     
 }
 
+/* footer section */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(179,31,41,1) 0%, rgba(109,110,109,1) 100%);
+    padding: 2rem;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
 
 
 
