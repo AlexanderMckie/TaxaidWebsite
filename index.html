@@ -15,7 +15,6 @@
     </div>
     <nav class="off-screen-menu" id="off-screen-menu">
         <ul>
-            <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="taxinfo.html">Tax Info</a></li>
         </ul>
@@ -23,7 +22,6 @@
     <nav class="nav-bar-desktop" id="nav-bar-desktop">
         <img class="nav-logo" src="assets/images/TaxaidLogoSmall.svg" alt="Tax-Aid Accounting Logo">
         <ul class="nav-links">
-            <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="taxinfo.html">Tax Info</a></li>
         </ul>
@@ -47,8 +45,8 @@
         </div>
         <div class="header-contact-email card">
             <img src="assets/images/EmailIcon.svg" alt="Email Icon">
-            <div class="card-content" onclick="window.location.href='mailto:info@tax-aid.com'">
-                <p >info@tax-aid.com</p>
+            <div class="card-content" onclick="window.location.href='mailto:help@tax-aid.com'">
+                <p >help@tax-aid.com</p>
             </div>
         </div>  
     </section>
@@ -112,30 +110,31 @@
     </section>
     <section class="contact">
 <h1>Contact Us</h1>
-<form action="https://formsubmit.co/info@tax-aid.com.au" method="post" enctype="text/plain">
-        <div class="form-group">
-            <label for="first-name">First Name:</label>
-            <input type="text" id="first-name" name="first-name" required>
-        </div>
-        <div class="form-group">
-            <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" name="last-name" required>
-        </div>
-        <div class="form-group">
-            <label for="mobile-number">Mobile Number:</label>
-            <input type="tel" id="mobile-number" name="mobile-number" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="query">Query:</label>
-            <textarea id="query" name="query" rows="4" required></textarea>
-        </div>
-        <button type="submit">Submit</button>   
+<form action="https://formsubmit.co/info@tax-aid.com.au" method="post" enctype="application/x-www-form-urlencoded">
+    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+    <div class="form-group">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+    </div>
+    <div class="form-group">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+    </div>
+    <div class="form-group">
+        <label for="mobile-number">Mobile Number:</label>
+        <input type="tel" id="mobile-number" name="mobile-number" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="query">Query:</label>
+        <textarea id="query" name="query" rows="4" required></textarea>
+    </div>
+    <button type="submit">Submit</button>   
 </form>
-
+    </section>
 </main>
 <footer>
     <p>&copy; 2025 Tax-Aid Pty Ltd. All rights reserved.<br>Webpage created by Alexander Mckie</p>
